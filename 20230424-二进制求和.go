@@ -27,10 +27,3 @@ func addBinary(a string, b string) string {
 
 	return res
 }
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
