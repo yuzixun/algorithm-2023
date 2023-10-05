@@ -1,7 +1,5 @@
 package main
 
-import "github.com/algorithm-2023/tools"
-
 func minSubArrayLen(target int, nums []int) int {
 	if len(nums) == 0 {
 		return 0
@@ -14,7 +12,7 @@ func minSubArrayLen(target int, nums []int) int {
 	for right < len(nums) {
 		sum += nums[right]
 		for sum >= target {
-			minSize = tools.Min(minSize, right-left+1)
+			minSize = Min(minSize, right-left+1)
 			sum -= nums[left]
 			left++
 		}
