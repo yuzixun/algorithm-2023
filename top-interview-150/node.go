@@ -7,5 +7,10 @@ type Node struct {
 
 	Left  *Node
 	Right *Node
-	Next  *Node
+
+	IsLeaf      bool
+	TopLeft     *Node
+	TopRight    *Node
+	BottomLeft  *Node
+	BottomRight *Node
 }
