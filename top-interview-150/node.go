@@ -13,4 +13,6 @@ type Node struct {
 	TopRight    *Node
 	BottomLeft  *Node
 	BottomRight *Node
+
+	Neighbors []*Node
 }
